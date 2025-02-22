@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "9c7ffddf-115e-43ae-a438-d5d096079f48",
+		"name": "url shortener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33826717"
+	},
+	"item": [
+		{
+			"name": "shorten url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/url/shorten?originalUrl=https://www.google.com&expirationTime=2025-12-31T23:59:59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"url",
+						"shorten"
+					],
+					"query": [
+						{
+							"key": "originalUrl",
+							"value": "https://www.google.com"
+						},
+						{
+							"key": "expirationTime",
+							"value": "2025-12-31T23:59:59"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get short url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/url/OWf9Ljl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"url",
+						"OWf9Ljl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
